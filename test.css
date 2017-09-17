@@ -1,0 +1,46 @@
+body {
+  font-family: verdana;
+}
+h1 {
+  background-color: tomato;
+}
+h2 {
+  background-color: tomato;
+}
+
+h3 {
+  background-color: #33cc33;
+}
+b.balise {
+  color : tomato;
+}
+pre {
+  border: 2px solid #ff6600;
+  border-radius: 5px;
+  font-size: 16px;
+}
+a:link{
+  color : tomato;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited{
+  color : tomato;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover{
+  color : green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active{
+  color : tomato;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#manarouge {
+  float: right;
+  height: 42px;
+  width: 42px;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+
+<head>
+  <link rel="stylesheet" href="test.css" />
+  <title>Fiche de référence html</title>
+  <meta charset="utf-8"/>
+</head>
+
+<h1>Fiche de référence html</h1>
+<hr>
+
+<h2 id="C0">Sommaire</h2>
+<p>
+<a href="#C1">Les bases</a><br/>
+<a href="#C2">Les attributs</a><br/>
+<a href="#C3">Les headings</a><br/>
+<a href="#C4">Les paragraphes</a><br/>
+<a href="#C5">Les styles</a><br/>
+<a href="#C6">Formatter son texte</a><br/>
+<a href="#C7">Quoter</a><br/>
+<a href="#C8">Les commentaires</a><br/>
+<a href="#C9">La couleur</a><br/>
+<a href="#C10">Le CSS</a><br/>
+<a href="#C11">Les liens</a><br/>
+<a href="#C12">Les images</a><br/>
+<!--<a href=""></a><br/>
+<a href=""></a><br/>
+-->
+</p>
+
+<h2 id="C1">Les bases</h2>
+<p>
+On utilise le tag <b> &lt;!DOCTYPE html&gt; </b> au début du document.
+Ensuite vient le tag <b>&lt;html&gt;</b> qui entoure le document
+Puis on divise le document en deux parties: <br/>
+  - <b>&lt;head&gt;</b> on y écrit les métadonnées <br/>
+  - <b>&lt;body&gt;</b> on y écrit la page <br/>
+Les éléments basique sont les paragraphes <b>&lt;p&gt;</b>, le lien <b>&lt;a&gt;</b>
+et l'image <b>&lt;img&gt;</b>.
+</p>
+
+<hr>
+<h2 id="C2">Les attributs</h2>
+<p>
+  Pour indiquer la langue <b>&lt;html lang="fr&gt;</b>.
+  <br/>Pour écrire la tooltip d'un paragraphe <b>&lt;p title="I'm a tooltip"&gt;</b>.
+  <br/>Pour écire un lien <b>&lt;a href="https://www.google.com"&gt;</b>.
+  <br/>Pour insérer une image <b>&lt;img src="w3schools.jpg" width="104" height="142"&gt;</b>.
+  <br/>De plus on peut ajouter un '<b>alt</b>' à l'image qui sera afficher si on ne peut la charger.
+</p>
+
+<hr>
+<h2 id="C3">Les headings</h2>
+<p>
+  On les utilise pour hiérarchiser le contenu.
+  <br/>Ils commencent par <b>h</b> et sont au nombre de 6.(ex: <b>&lt;h1&gt;</b>)
+  <br/>On peut faire une règle horizontale : <b>&lt;hr/&gt;</b>
+</p>
+
+<hr>
+<h2 id="C4">Les paragraphes</h2>
+<p>
+  On peut faire des paragraphes avec <b>&lt;p&gt;</b>.
+  <br/>Si on veut garder un texte préformaté on utilise <b>&lt;pre&gt;</b>
+</p>
+
+<hr>
+<h2 id="C5">Les styles</h2>
+<p>
+On peut utilise du css dans du code html avec l'attribut <b>style="property:value;"</b>.
+Exemple de propriétés :
+</p><pre>
+  - <b>background-color</b>: couleur;
+  - <b>color</b>: couleur;
+  - <b>border</b>: taille type couleur;
+  - <b>font-family</b>
+  - <b>font-size</b>
+  - <b>text-align</b> (left,center,right)
+</pre>
+
+<hr>
+<h2 id="C6">Formatter son texte</h2>
+<pre>
+<b>&lt;b&gt;</b> Defines bold text
+<b>&lt;em&gt;</b> Defines emphasized text
+<b>&lt;i&gt;</b> Defines italic text
+<b>&lt;small&gt;</b> Defines smaller text
+<b>&lt;strong&gt;</b> Defines important text
+<b>&lt;sup&gt;</b> Defines erscripted text
+<b>&lt;ins&gt;</b> Defines inserted text
+<b>&lt;del&gt;</b> Defines deleted text
+<b>&lt;mark&gt;</b> Defines marked/highlighted text
+</pre>
+
+<hr/>
+<h2 id="C7">Quoter</h2>
+<p>
+  On peut utiliser l'élément <b>&lt;q&gt;</b> pour définir une petite quotation :
+  <q>Alea jacta est</q>. <br/> Sinon on peut utiliser <b>&lt;blockquote cite="SOURCE"&gt;</b>
+  si l'on veut ajouter la source de la quote. On obtient alors : <blockquote
+  cite="http://www.google.com"> Alea jacta est </blockquote><br/>
+  Pour réaliser un abbréviation on utilise <b>&lt;abbr title="SIGNIFICATION"&gt;</b>
+  . Par exemple <abbr title="WORLD WIBE WEB">www</abbr>.<br/>
+  On utilise la balise <a>&lt;address&gt;</a> pour écrire un addresse.<br/>
+  Pour citer le nom d'une oeuvre on utilise <a>&lt;cite&gt;</a>.
+</p>
+
+<hr/>
+<h2 id="C8">Les commentaires</h2>
+<p>
+  On ecrit des commentaires avec <b style="color:green;">&lt;!-- COMMENTAIRE --&gt;</b>. On peut les ecrire
+  sur plusieurs lignes si on ne ferme pas avec --&gt;. <br/>
+  On peut aussi écrire des commentaires conditionnels pour n'éxécuter du code html
+  qu'en présence d'un certain navigateur : <b style="color:green;">&lt;!--[if IE 9]&gt; CODE &lt;![endif]--&gt;</b>.
+</p>
+
+<hr/>
+<h2 id="C9">La couleur</h2>
+<p>
+  On a vu précédemment, dans la partie style, des propriétés permettant de
+  colorer notre page, voyons maintenant comment. On a plusieurs moyens de choisir
+  la couleur, en utilisant leurs :
+<pre>
+  - <b>nom</b>
+  - <b>code rgb</b> : rgb(255, 99, 71)
+  - <b>valeur hex</b> : #ff6347
+  - <b>valeur hsl</b> : hsl(9, 100%, 64%)
+  - <b>code rgba</b> : rgba(255, 99, 71, 0.5)
+  - <b>valeur hsla</b> : hsla(9, 100%, 64%, 0.5)
+</pre>
+  Les codes rgba et hsla prennent en compte la transparence.
+</p>
+
+<hr/>
+<h2 id="C10">Le CSS</h2>
+<p>
+On utilise le <b>CSS</b> pour gagner du temps sur la mise en page. Nous avons déjà
+utilié du CSS dans la propriété <b>style</b> d'un élément.<br/>
+</p>
+
+<h3>Le CSS en ligne</h3>
+<p>
+Ce CSS correspond à celui utilisé au cas par cas dans la propriété <b>style</b>
+d'un élément.
+</p>
+
+<h3>Le CSS interne</h3>
+<p>
+Le CSS interne est utlisé dans la sectione &lt;head&gt; d'une page HTML.
+<pre>
+&lt;head&gt;
+&lt;style&gt;
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+&lt;/style&gt;
+&lt;/head&gt;
+</pre>
+</p>
+
+<h3>Le CSS externe</h3>
+<p>
+Le CSS externe est écrit dans un fichier différent en <b>.css</b> et est appelé
+dans la page html via :
+</p>
+<pre>
+&lt;head&gt;
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+</pre>
+<p>
+Le fichier doit alors ressembler à :
+</p>
+<pre>
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: blue;
+}
+p {
+    color: red;
+}
+</pre>
+<h3>Utilisation du CSS</h3>
+<p>
+Voici une liste de propriétés utilisables :
+</p>
+<pre>
+  - background-color:
+  - color:
+  - font-family:
+  - font-size:
+  - border:
+  - padding: (espace entre le texte et la bordure)
+  - margin: (espace en dehors de la bordure)
+  - ...
+</pre>
+<p>
+Pour modifier un élément particulier en peut utiliser un <b>id</b>, par exemple
+: <b>&lt;p id="p01"&gt; Je suis différent &lt;/p></b>. Puis dans le code CSS on fait appel
+à cet id avec <b>#p01 {}</b>. L'id doit être <u>unique</u>.<br/>
+Pour modifier plusieurs éléments de même type, on peut ajouter un attribut <b>classe</b>
+de la façon suivante <b>&lt;p class="test"&gt; la &lt;/p&gt;</b> pour ensuite l'appeler via
+<b>p.test {}</b> dans le fichier CSS.
+</p>
+
+<hr/>
+<h2 id="C11">Les liens</h2>
+<p>
+  Les liens permettent de passer à un autre document. Ils sont délimité par la
+  balise <b class="balise">&lt;a href="LIEN"&gt;</b>. <br/>
+  L'apparence des liens est par défaut en bleu et souligné pour un
+  <b style="color:blue; text-decoration:underline;">lien non
+  visité</b>, en violet et souligné pour un
+  <b style="color:purple; text-decoration:underline;">lien visité</b>
+  et en rouge et souligné pour un
+  <b style="color:red; text-decoration:underline;">lien actif</b>.<br/>
+  On peut changer la couleur des liens avec un fichiers CSS en modifiant les
+  propriétés <b>color, background-color, text-decoration</b> de <b>a:link, a:visited,
+  a:hover et a:active</b>.
+</p>
+<p>
+  L'attribut <b>target</b> permet d'ouvrir la page selon un ordre spécifié.
+</p>
+  <pre>
+    _blank : dans une nouvelle fenêtre ou un nouvel onglet
+    _self : dans la même fenêtre/onglet (par défaut)
+    _parent :
+    _top : dans tout le corps de la fenête
+    _framename : dans une fenêtre nommée
+  </pre>
+  <p>
+    On peut utiliser une image comme lien, c'est à dire qu'on peut faire :<br/>
+    &lt;a href="LIEN"&gt;&lt;img src="" alt="" style=""&gt;&lt;/a&gt;
+  </p>
+  <p>
+    On peut aussi utiliser des liens internes : des bookmarks. Pour cela, on
+    remplace le lien dans <b>href</b> par un id --&gt; &lt;a href="#C4"&gt;.
+  </p>
+
+  <h2 id="C12">Les images</h2>
+  <p>
+    On utilise la balise <b class="balise">&lt;img/&gt;</b> pour ajouter une
+    image. Cette balise comprend trois attributs :
+    <ul>
+      <li><b>src</b>: lien de l'image</li>
+      <li><b>alt</b>: message à afficher si l'image ne peut être chargée</li>
+      <li><b>style</b>: dimensions de l'image</li>
+    </ul>
+    Ce qui donne &lt;img src="url" alt="some_text" style="width:width;height:height;"&gt;
+  </p>
+  <p><img src="red_mana.png" alt="dommage" id="manarouge"/>
+    On peut ajouter la propriété <b>float:left</b>(ou right) à <b>style</b> pour faire flotter une image à
+    gauche ou à droite d'un texte.
+  </p>
+  <p>
+    On peut utiliser une map pour mettre plusieurs liens sur une image, en
+    fonction de là où on a cliqué.
+  </p>
+  <pre>
+    &lt;img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;"&gt;
+
+    &lt;map name="planetmap"&gt;
+      &lt;area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm"&gt;
+      &lt;area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm"&gt;
+      &lt;area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm"&gt;
+    &lt;/map&gt;
+</pre>
+
+
+
+
+</body>
+</html>
