@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="test.css" />
   <title>Fiche de référence html</title>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <h1>Fiche de référence html</h1>
@@ -24,6 +25,7 @@
 <a href="#C10">Le CSS</a><br/>
 <a href="#C11">Les liens</a><br/>
 <a href="#C12">Les images</a><br/>
+<a href="#C13">Les tableaux</a><br/>
 <!--<a href=""></a><br/>
 <a href=""></a><br/>
 -->
@@ -195,6 +197,7 @@ Voici une liste de propriétés utilisables :
   - border:
   - padding: (espace entre le texte et la bordure)
   - margin: (espace en dehors de la bordure)
+  - background-image:
   - ...
 </pre>
 <p>
@@ -267,7 +270,31 @@ de la façon suivante <b>&lt;p class="test"&gt; la &lt;/p&gt;</b> pour ensuite l
       &lt;area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm"&gt;
       &lt;area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm"&gt;
     &lt;/map&gt;
-</pre>
+  </pre>
+  <p>
+    On peut décider de placer une image en fond avec la propriété <b>background-
+    image</b> de <b>style</b>.
+  </p>
+  <p>
+    HTML5 apporte aussi une nouvelle manière de traiter les images avec la
+    balise <b>&lt;picture&gt;</b>. Dans cet environnement, on peu spécifier
+    quelle image afficher en fonction des propriétés du browser grâce à des
+    éléments <b>&lt;source/&gt;</b>. Il faut néanmoins toujours utiliser <b>&lt;img/&gt;
+    </b> pour le cas où le navigateur ne gère pas <b>&lt;picture&gt;</b>
+    Par exemple :
+    <pre>
+      &lt;picture&gt;
+        &lt;source media="(min-width: 650px)" srcset="img_pink_flowers.jpg"&gt;
+        &lt;source media="(min-width: 465px)" srcset="img_white_flower.jpg"&gt;
+        &lt;img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"&gt;
+      &lt;/picture&gt;
+    </pre>
+
+    <hr/>
+    <h2 id="C13">Les tableaux</h2>
+
+
+
 
 
 
